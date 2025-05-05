@@ -21,5 +21,6 @@ The APB_SLAVE module interfaces with the APB_MASTER, decoding the control signal
 
 
 9. SIMPLE_MEMORY_INTERFACE Module
+    
 The SIMPLE_MEMORY_INTERFACE module acts as the backend memory system, accepting abstracted memory requests with address, data, and read/write control. When a valid request is received, it performs a memory read or write depending on the req_rnw_i signal and returns data (req_rdata_o) or an acknowledgment (req_ready_o). It provides a simplified and reusable abstraction for memory transactions in APB slave interactions.
 
